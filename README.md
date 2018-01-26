@@ -16,7 +16,7 @@ and create a themed image gallery app based on today's lecture.
 * Make it responsive, using a combination of CSS Grid and Flexbox.
 * Follow the Webpack component and router architecture we've used on other labs.
 * Choose appropriate UI and navigational patterns based on your app's functionality and goals.
-* Your app should write and remove image data using [Firebase](https://firebase.google.com/).
+* Your app should create, update, remove image data using [Firebase](https://firebase.google.com/).
 * [Cloudinary](https://cloudinary.com/documentation/responsive_images) should be used to serve appropriate responsive images.
 * Sketch your responsive layout **and** app component structure before developing.
 
@@ -34,7 +34,7 @@ Include the answers to the following in your submission:
 ## Rubric
 * Sketches used to plan out responsive layout **and** app component structure (2 points)
 * App features semantic markup and responsive CSS (2 points)
-* Images and image categories can be added, removed, updated (4 points)
+* Images and image categories can be created, updated, removed (4 points)
 * Responsive image strategies applied (2 points)
 
 ## Stretch goal
