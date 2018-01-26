@@ -2,7 +2,7 @@ import Template from '../Template';
 import html from './app.html';
 import './app.css';
 import Header from '../header/Header';
-import Home from '../home/Home';
+import Grid from '../grid/Grid';
 import Resources from '../resources/Resources';
 import Footer from '../footer/Footer.js';
 import { removeChildren } from '../dom';
@@ -11,7 +11,7 @@ const template = new Template(html);
 
 // Hash Navigation
 const map = new Map();
-map.set('#add', Resources);
+map.set('#grid/add', Resources);
 
 export default class App {
 
@@ -27,7 +27,7 @@ export default class App {
 
     if(this.pageComponent) this.pageComponent.unrender();
     this.page = page;
-    const Component = map.get(this.page) || Home;
+    const Component = map.get(this.page) || Grid;
     this.pageComponent = new Component();
     removeChildren(this.main);
     this.main.appendChild(this.pageComponent.render());
