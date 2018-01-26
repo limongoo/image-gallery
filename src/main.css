@@ -5,7 +5,7 @@ html {height: 100%;}
 body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
-  color: $white;
+  color: $darkgray;
   min-height: 100%;
 }
 
@@ -57,12 +57,12 @@ a {
   color: $link;
   transition: 0.3s ease all;
   padding: 0 0 3px;
-  border-bottom: 3px solid $black;
+  border-bottom: 3px solid $white;
 }
 
 a:hover {
   color: $link;
-  border-bottom: 3px solid $link;
+  border-bottom: 3px solid $accent;
 }
 
 /*  -------- Media Queries ------- */

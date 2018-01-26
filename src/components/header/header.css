@@ -6,12 +6,16 @@
   align-items: center;
 }
 
-.logo {
-  max-width: 21rem;
-}
-
 .logo-text {
   font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Trirong';
+  border-bottom: 0px;
+  color: $link;
+  &:hover {
+    border-bottom: 0px;
+    color: $accent;
+  }
 }
 
 .ulist {
@@ -26,7 +30,7 @@
       transition: 0.3s ease all;
     }
     a:hover {
-      border-bottom-color: $link;
+      border-bottom-color: $accent;
     }
   }
 }

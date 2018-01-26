@@ -11,8 +11,7 @@ const template = new Template(html);
 
 // Hash Navigation
 const map = new Map();
-map.set('#home', Home);
-map.set('#resources', Resources);
+map.set('#add', Resources);
 
 export default class App {
 
