@@ -17,16 +17,21 @@ map.set('#resources', Resources);
 export default class App {
 
   constructor() {
-    window.onhashchange = () => {
-      this.setPage();
-    };
+    this.hashChange = () => this.setPage();
+    window.addEventListener('hashchange', this.hashChange);
   }
-  
+
   setPage() {
-    const Component = map.get(window.location.hash) || Home;
-    const component = new Component();
+    const routes = window.location.hash.split('/');
+    const page = routes[0];
+    if(page === this.page) return;
+
+    if(this.pageComponent) this.pageComponent.unrender();
+    this.page = page;
+    const Component = map.get(this.page) || Home;
+    this.pageComponent = new Component();
     removeChildren(this.main);
-    this.main.appendChild(component.render());
+    this.main.appendChild(this.pageComponent.render());
   }
 
   render() {
@@ -39,5 +44,9 @@ export default class App {
     this.setPage();
 
     return dom;
+  }
+
+  unrender() {
+    window.removeEventListener('hashchange', this.hashChange);
   }
 }
