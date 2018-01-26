@@ -20,7 +20,7 @@ and create a themed image gallery app based on today's lecture.
 * [Cloudinary](https://cloudinary.com/documentation/responsive_images) should be used to serve appropriate responsive images.
 * Sketch your responsive layout **and** app component structure before developing.
 
-See [today's classwork](https://github.com/acl-devsign-winter-2018/classwork/tree/master/14-apps) for notes on working with Firebase.
+See [today's classwork](https://github.com/acl-devsign-winter-2018/classwork/tree/master/14-apps) for notes on working with Firebase and creating App template.
 
 Note that the sketch process doesn't have to end once development begins. If you get stuck, sketch or whiteboard until the answer is clear.
 
