@@ -6,7 +6,8 @@ Pick a topic
 * :baseball: baseball  
 * :surfer: surfing  
 * :cat2: kittens  
-* :guitar: guitars  
+* :guitar: guitars 
+* :pizza: pizza 
 * (etc.)
 
 and create a themed image gallery app based on today's lecture.
