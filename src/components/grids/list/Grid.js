@@ -11,7 +11,7 @@ export default class Grid {
   constructor(key, grid) {
     this.key = key;
     this.grid = grid;
-    this.gridImages = gridImages.child(key).limitToFirst(1);
+    this.gridImages = gridsImages.child(key).limitToFirst(1);
   }
 
   update(grid) {
