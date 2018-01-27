@@ -44,15 +44,15 @@ export default class AddGrid {
     });
 
     // upload
-    this.images = new Upload(this.key);
-    dom.querySelector('section.images').append(this.images.render());
+    // this.images = new Upload(this.key);
+    // dom.querySelector('section.images').append(this.images.render());
 
     return dom;
   }
 
   unrender() {
     // upload
-    grids.child(this.key).off('value', this.onValue);
-    this.images.unrender();
+    // grids.child(this.key).off('value', this.onValue);
+    // this.images.unrender();
   }
 }
