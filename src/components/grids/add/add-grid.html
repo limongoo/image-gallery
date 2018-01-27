@@ -1,22 +1,26 @@
-<a href="#grids">&larr; Back to main Image Grid</a>
+<a href="#grids" alt="Back to main image grid page" class="back">&larr; Back to main Image Grid</a>
 
-<form>
-  <label>
-    <div>Image Name</div>
-    <input required name="name">
-  </label>
+<form class="form-add">
+  <fieldset>
 
-  <label>
-    <div>Image Category</div>
-    <input required name="type">
-  </label>
+    <legend>Add New Image</legend>
 
-  <label>
-    <button type="button">Cancel</button>
-    <button type="submit">Add</button>
-  </label>
+    <label>
+      <div>Image Name</div>
+      <input required name="name">
+    </label>
 
-  <p class="error"></p>
+    <label>
+      <div>Image Category</div>
+      <input required name="type">
+    </label>
+
+      <button type="submit">Add</button>
+      <button type="button">Cancel</button>
+  
+
+    <p class="error"></p>
+  </fieldset>
 </form>
 
 <!-- upload -->
