@@ -15,7 +15,7 @@ export default class Grid {
   }
 
   update(grid) {
-    this.caption.textContent = `${grid.name} the ${grid.type}`;
+    this.caption.textContent = `${grid.name} / ${grid.type}`;
     this.image.alt = grid.name;
   }
 

@@ -2,7 +2,7 @@ import html from './add-grid.html';
 import './add-grid.css';
 import Template from '../../Template';
 //upload
-import Upload from '../detail/Upload';
+// import Upload from '../detail/Upload';
 //
 import { db } from '../../../services/firebase';
 
@@ -10,8 +10,11 @@ const template = new Template(html);
 const grids = db.ref('grids');
 
 export default class AddGrid {
-  constructor(onAdd) {
+  
+  constructor(onAdd, key) {
     this.onAdd = onAdd;
+    // this.key = key;
+    // this.grid = grids.child(key);
   }
 
   handleSubmit(form) {

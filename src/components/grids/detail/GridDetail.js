@@ -21,7 +21,7 @@ export default class GridDetail {
 
     this.onValue = this.grid.on('value', data => {
       const grid = data.val();
-      header.textContent = `${grid.name} the ${grid.type}`;
+      header.textContent = `${grid.name} / ${grid.type}`;
       name.textContent = grid.name;
     });
 

@@ -3,7 +3,7 @@
 .header-flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .logo-text {
@@ -11,6 +11,7 @@
   text-transform: uppercase;
   font-family: 'Trirong';
   border-bottom: 0px;
+  text-align: left;
   color: $link;
   &:hover {
     border-bottom: 0px;
@@ -18,12 +19,21 @@
   }
 }
 
+.logo-wrap {
+  text-align: left;
+}
+
+.top {
+  font-size: 0.7rem;
+  padding: 0.5rem 0 0;
+}
+
 .ulist {
   display: flex;
   justify-content: center;
   margin: 0;
   li {
-    padding: 0 1rem;
+    padding: 0.5rem 1rem 0;
     a {
       color: $black;
       border-bottom: 3px solid $white;
@@ -33,6 +43,7 @@
       border-bottom-color: $accent;
     }
   }
+  
 }
 
 nav {
@@ -45,6 +56,11 @@ nav {
 @media only screen and (min-width: 320px) and (max-width: 640px) {
   .header-flex {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-wrap {
+    text-align: center;
   }
 
   .ulist {
