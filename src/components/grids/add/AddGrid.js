@@ -1,6 +1,9 @@
 import html from './add-grid.html';
 import './add-grid.css';
 import Template from '../../Template';
+//upload
+import Upload from '../detail/Upload';
+//
 import { db } from '../../../services/firebase';
 
 const template = new Template(html);
@@ -40,10 +43,16 @@ export default class AddGrid {
       window.location.hash = '#grids';
     });
 
+    // upload
+    this.images = new Upload(this.key);
+    dom.querySelector('section.images').append(this.images.render());
+
     return dom;
   }
 
   unrender() {
-
+    // upload
+    grids.child(this.key).off('value', this.onValue);
+    this.images.unrender();
   }
 }
