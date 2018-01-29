@@ -18,8 +18,8 @@ export default class GridDetail {
 
     const header = dom.querySelector('h2');
     const subheader = dom.querySelector('h4');
-    const name = dom.querySelector('.name');
-    const type = dom.querySelector('.type');
+    // const name = dom.querySelector('.name');
+    // const type = dom.querySelector('.type');
 
     // this.onValue = this.grid.on('value', data => {
     //   const grid = data.val();

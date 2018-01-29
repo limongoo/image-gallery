@@ -1,15 +1,17 @@
 <section class="upload">
   <div>
-    <label>Upload image:</label>
-    <input type="file">
+    <label for="file">Upload image:
+      <input name="file" type="file">
+    </label>
   </div>
-  <p>or</p>
+  or
   <div>
-    <label>Embed image:</label>
+    <label for="url">Embed image:
       <form class="form-embed">
         <input name="url" type="text">
         <button type="submit">Add</button>
       </form>
+    </label>
   </div>
 </section>
-<ul class="grid-list"></ul>
+<ul class="grid-detail"></ul>

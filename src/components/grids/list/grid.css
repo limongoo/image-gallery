@@ -33,3 +33,23 @@
     /* color: $accent; */
   }
 }
+
+/*  -------- Media Queries ------- */
+
+/* Mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .grid {
+    h4 {
+      color: $darkgray;
+    }
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+  .grid {
+    h4 {
+      color: $darkgray;
+    }
+  }
+}
