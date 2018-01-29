@@ -17,12 +17,21 @@ export default class GridDetail {
     const dom = template.clone();
 
     const header = dom.querySelector('h2');
+    const subheader = dom.querySelector('h4');
     const name = dom.querySelector('.name');
+    const type = dom.querySelector('.type');
 
+    // this.onValue = this.grid.on('value', data => {
+    //   const grid = data.val();
+    //   header.textContent = `${grid.name} \ ${grid.type}`;
+    //   name.textContent = grid.name; 
+    // });
     this.onValue = this.grid.on('value', data => {
       const grid = data.val();
-      header.textContent = `${grid.name} / ${grid.type}`;
+      header.textContent = `${grid.name}`;
+      subheader.textContent = `${grid.type}`;
       name.textContent = grid.name;
+      type.textContent = grid.type;
     });
 
     this.images = new Upload(this.key);

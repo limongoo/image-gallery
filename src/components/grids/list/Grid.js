@@ -29,7 +29,7 @@ export default class Grid {
     this.update(this.grid);
     
     this.onValue = this.gridImages.on('child_added', data => {
-      this.image.src = getUrl(data.val(), 'c_scale,w_150');
+      this.image.src = getUrl(data.val(), 'c_scale,w_500');
     });
 
     return dom;
