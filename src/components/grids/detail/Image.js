@@ -17,7 +17,7 @@ export default class Image {
     this.image = dom.querySelector('img');
     this.image.alt = this.src;
 
-    dom.querySelector('img').src = getUrl(this.src, 'c_scale,w_500');
+    dom.querySelector('img').src = getUrl(this.src, 'c_fill,w_500,h_500');
     dom.querySelector('button').addEventListener('click', () => {
       this.onRemove();
     });
