@@ -1,7 +1,12 @@
 @import '../../variables.css';
 
 .remove {
-
+  padding: 0.5rem;
+  background: $darkgray;
+  color: $white;
+  border-radius: 5px;
+  margin: 10px 0 0;
+  font-size: 0.8rem;
 }
 
 ul.grid-list {

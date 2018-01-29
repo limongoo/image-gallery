@@ -48,7 +48,7 @@ fieldset {
 }
 
 button[type=submit] {
-  background: $accent;
+  background: #af4141;
   color: white;
   border: none;
   border-radius: 5px;
@@ -66,7 +66,7 @@ button[type=submit]:hover {
 }
 
 button[type=button] {
-  background: gray;
+  background: rgb(82, 82, 82);
   color: white;
   border: none;
   border-radius: 5px;

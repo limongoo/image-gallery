@@ -15,7 +15,8 @@ export default class Grid {
   }
 
   update(grid) {
-    this.caption.textContent = `${grid.name} / ${grid.type}`;
+    this.caption.textContent = `${grid.name}`;
+    this.subcaption.textContent = `${grid.type}`;
     this.image.alt = grid.name;
   }
 
@@ -24,6 +25,7 @@ export default class Grid {
 
     dom.querySelector('a').href = `#grids/${this.key}`;
     this.caption = dom.querySelector('h2');
+    this.subcaption = dom.querySelector('h4');
     this.image = dom.querySelector('img');
 
     this.update(this.grid);

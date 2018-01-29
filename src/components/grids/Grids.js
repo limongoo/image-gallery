@@ -17,8 +17,6 @@ export default class Grids {
 
   setChildPage() {
     const routes = window.location.hash.split('/');
-    // force the comparison against undefined
-    // to fail by using an empty string
     const childPage = routes[1] || '';
     if(this.childPage === childPage) return;
 

@@ -14,6 +14,9 @@ export default class Image {
   render() {
     const dom = template.clone();
     
+    this.image = dom.querySelector('img');
+    this.image.alt = this.src;
+
     dom.querySelector('img').src = getUrl(this.src, 'c_scale,w_500');
     dom.querySelector('button').addEventListener('click', () => {
       this.onRemove();

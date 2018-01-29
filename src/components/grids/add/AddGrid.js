@@ -11,7 +11,7 @@ const grids = db.ref('grids');
 
 export default class AddGrid {
   
-  constructor(onAdd, key) {
+  constructor(onAdd) {
     this.onAdd = onAdd;
     // this.key = key;
     // this.grid = grids.child(key);

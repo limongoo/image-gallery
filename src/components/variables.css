@@ -1,4 +1,4 @@
-$accent: #c77777;
+$accent: #b36969;
 $link: #585857;
 $darklink: #007BC2;
 $lightgray: #eeeeee;
@@ -11,5 +11,5 @@ $maxViewportSize: 1280px;
 $padding: 2rem;
 
 aside {
-  color: #c77777;
+  color: #b36969;
 }
